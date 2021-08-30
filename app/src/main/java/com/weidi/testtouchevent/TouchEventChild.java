@@ -29,17 +29,17 @@ public class TouchEventChild extends LinearLayout {
             public boolean onTouch(View v, MotionEvent ev) {
                 switch (ev.getAction()) {
                     case MotionEvent.ACTION_DOWN:
-                        Log.i(TAG, "TouchEventChild  onTouch ACTION_DOWN");
+                        Log.i(TAG, "TouchEventChild    onTouch ACTION_DOWN");
                         break;
                     //return true;
                     //return false;
                     case MotionEvent.ACTION_MOVE:
-                        Log.i(TAG, "TouchEventChild  onTouch ACTION_MOVE");
+                        Log.i(TAG, "TouchEventChild    onTouch ACTION_MOVE");
                         break;
                     //return true;
                     //return false;
                     case MotionEvent.ACTION_UP:
-                        Log.i(TAG, "TouchEventChild  onTouch ACTION_UP");
+                        Log.i(TAG, "TouchEventChild    onTouch ACTION_UP");
                         break;
                     //return true;
                     //return false;
@@ -55,7 +55,7 @@ public class TouchEventChild extends LinearLayout {
         this.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.i(TAG, "TouchEventChild  onClick");
+                Log.i(TAG, "TouchEventChild    onClick");
             }
         });
     }
@@ -64,13 +64,13 @@ public class TouchEventChild extends LinearLayout {
     public boolean dispatchTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.i(TAG, "TouchEventChild  dispatchTouchEvent ACTION_DOWN");
+                Log.i(TAG, "TouchEventChild    dispatchTouchEvent ACTION_DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
-                Log.i(TAG, "TouchEventChild  dispatchTouchEvent ACTION_MOVE");
+                Log.i(TAG, "TouchEventChild    dispatchTouchEvent ACTION_MOVE");
                 break;
             case MotionEvent.ACTION_UP:
-                Log.i(TAG, "TouchEventChild  dispatchTouchEvent ACTION_UP");
+                Log.i(TAG, "TouchEventChild    dispatchTouchEvent ACTION_UP");
                 break;
             default:
                 break;
@@ -82,13 +82,13 @@ public class TouchEventChild extends LinearLayout {
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.i(TAG, "TouchEventChild  onInterceptTouchEvent ACTION_DOWN");
+                Log.i(TAG, "TouchEventChild    onInterceptTouchEvent ACTION_DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
-                Log.i(TAG, "TouchEventChild  onInterceptTouchEvent ACTION_MOVE");
+                Log.i(TAG, "TouchEventChild    onInterceptTouchEvent ACTION_MOVE");
                 break;
             case MotionEvent.ACTION_UP:
-                Log.i(TAG, "TouchEventChild  onInterceptTouchEvent ACTION_UP");
+                Log.i(TAG, "TouchEventChild    onInterceptTouchEvent ACTION_UP");
                 break;
             default:
                 break;
@@ -100,13 +100,13 @@ public class TouchEventChild extends LinearLayout {
     public boolean onTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.i(TAG, "TouchEventChild  onTouchEvent ACTION_DOWN");
+                Log.i(TAG, "TouchEventChild    onTouchEvent ACTION_DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
-                Log.i(TAG, "TouchEventChild  onTouchEvent ACTION_MOVE");
+                Log.i(TAG, "TouchEventChild    onTouchEvent ACTION_MOVE");
                 break;
             case MotionEvent.ACTION_UP:
-                Log.i(TAG, "TouchEventChild  onTouchEvent ACTION_UP");
+                Log.i(TAG, "TouchEventChild    onTouchEvent ACTION_UP");
                 break;
             default:
                 break;

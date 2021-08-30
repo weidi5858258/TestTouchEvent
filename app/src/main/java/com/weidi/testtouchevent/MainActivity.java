@@ -61,17 +61,17 @@ public class MainActivity extends AppCompatActivity {
     public boolean dispatchTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.i(TAG, "MainActivity     dispatchTouchEvent ACTION_DOWN");
+                Log.i(TAG, "MainActivity       dispatchTouchEvent ACTION_DOWN");
                 break;
                 //return true;
                 //return false;
             case MotionEvent.ACTION_MOVE:
-                Log.i(TAG, "MainActivity     dispatchTouchEvent ACTION_MOVE");
+                Log.i(TAG, "MainActivity       dispatchTouchEvent ACTION_MOVE");
                 break;
                 //return true;
                 //return false;
             case MotionEvent.ACTION_UP:
-                Log.i(TAG, "MainActivity     dispatchTouchEvent ACTION_UP");
+                Log.i(TAG, "MainActivity       dispatchTouchEvent ACTION_UP");
                 break;
                 //return true;
                 //return false;
@@ -84,13 +84,13 @@ public class MainActivity extends AppCompatActivity {
     public boolean onTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.i(TAG, "MainActivity     onTouchEvent ACTION_DOWN");
+                Log.i(TAG, "MainActivity       onTouchEvent ACTION_DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
-                Log.i(TAG, "MainActivity     onTouchEvent ACTION_MOVE");
+                Log.i(TAG, "MainActivity       onTouchEvent ACTION_MOVE");
                 break;
             case MotionEvent.ACTION_UP:
-                Log.i(TAG, "MainActivity     onTouchEvent ACTION_UP");
+                Log.i(TAG, "MainActivity       onTouchEvent ACTION_UP");
                 break;
             default:
                 break;

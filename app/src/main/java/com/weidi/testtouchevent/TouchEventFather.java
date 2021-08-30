@@ -7,7 +7,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 
-public class TouchEventFather extends LinearLayout {
+public class TouchEventFather   extends LinearLayout {
 
     private static final String TAG = "player_alexander";
 
@@ -29,17 +29,17 @@ public class TouchEventFather extends LinearLayout {
             public boolean onTouch(View v, MotionEvent ev) {
                 switch (ev.getAction()) {
                     case MotionEvent.ACTION_DOWN:
-                        Log.i(TAG, "TouchEventFather onTouch ACTION_DOWN");
+                        Log.i(TAG, "TouchEventFather   onTouch ACTION_DOWN");
                         break;
                     //return true;
                     //return false;
                     case MotionEvent.ACTION_MOVE:
-                        Log.i(TAG, "TouchEventFather onTouch ACTION_MOVE");
+                        Log.i(TAG, "TouchEventFather   onTouch ACTION_MOVE");
                         break;
                     //return true;
                     //return false;
                     case MotionEvent.ACTION_UP:
-                        Log.i(TAG, "TouchEventFather onTouch ACTION_UP");
+                        Log.i(TAG, "TouchEventFather   onTouch ACTION_UP");
                         break;
                     //return true;
                     //return false;
@@ -55,7 +55,7 @@ public class TouchEventFather extends LinearLayout {
         this.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.i(TAG, "TouchEventFather onClick");
+                Log.i(TAG, "TouchEventFather   onClick");
             }
         });
     }
@@ -64,17 +64,17 @@ public class TouchEventFather extends LinearLayout {
     public boolean dispatchTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.i(TAG, "TouchEventFather dispatchTouchEvent ACTION_DOWN");
+                Log.i(TAG, "TouchEventFather   dispatchTouchEvent ACTION_DOWN");
                 break;
             //return true;
             //return false;
             case MotionEvent.ACTION_MOVE:
-                Log.i(TAG, "TouchEventFather dispatchTouchEvent ACTION_MOVE");
+                Log.i(TAG, "TouchEventFather   dispatchTouchEvent ACTION_MOVE");
                 break;
             //return true;
             //return false;
             case MotionEvent.ACTION_UP:
-                Log.i(TAG, "TouchEventFather dispatchTouchEvent ACTION_UP");
+                Log.i(TAG, "TouchEventFather   dispatchTouchEvent ACTION_UP");
                 break;
             //return true;
             //return false;
@@ -88,17 +88,17 @@ public class TouchEventFather extends LinearLayout {
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.i(TAG, "TouchEventFather onInterceptTouchEvent ACTION_DOWN");
+                Log.i(TAG, "TouchEventFather   onInterceptTouchEvent ACTION_DOWN");
                 break;
             //return true;
             //return false;
             case MotionEvent.ACTION_MOVE:
-                Log.i(TAG, "TouchEventFather onInterceptTouchEvent ACTION_MOVE");
+                Log.i(TAG, "TouchEventFather   onInterceptTouchEvent ACTION_MOVE");
                 break;
             //return true;
             //return false;
             case MotionEvent.ACTION_UP:
-                Log.i(TAG, "TouchEventFather onInterceptTouchEvent ACTION_UP");
+                Log.i(TAG, "TouchEventFather   onInterceptTouchEvent ACTION_UP");
                 break;
             //return true;
             //return false;
@@ -112,13 +112,13 @@ public class TouchEventFather extends LinearLayout {
     public boolean onTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.i(TAG, "TouchEventFather onTouchEvent ACTION_DOWN");
+                Log.i(TAG, "TouchEventFather   onTouchEvent ACTION_DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
-                Log.i(TAG, "TouchEventFather onTouchEvent ACTION_MOVE");
+                Log.i(TAG, "TouchEventFather   onTouchEvent ACTION_MOVE");
                 break;
             case MotionEvent.ACTION_UP:
-                Log.i(TAG, "TouchEventFather onTouchEvent ACTION_UP");
+                Log.i(TAG, "TouchEventFather   onTouchEvent ACTION_UP");
                 break;
             default:
                 break;
