@@ -7,7 +7,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 
-public class TouchEventFather   extends LinearLayout {
+public class TouchEventFather extends LinearLayout {
 
     private static final String TAG = "player_alexander";
 
@@ -84,6 +84,13 @@ public class TouchEventFather   extends LinearLayout {
         return super.dispatchTouchEvent(ev);
     }
 
+    /*
+    结论:
+1. onInterceptTouchEvent 不管返回什么,对自身没有任何影响,影响的是子类
+2. onInterceptTouchEvent DOWN return true时,子类没有任何事件(DOWN,MOVE,UP)了,触发自身点击事件,屏蔽子类点击事件.
+3. onInterceptTouchEvent MOVE return true时,子类的DOWN事件正常触发,MOVE和UP事件没了,自身和子类的点击事件都没有了.
+4. onInterceptTouchEvent UP   return true时,子类的DOWN和MOVE事件正常触发,UP事件没了,自身和子类的点击事件都没有了.
+     */
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
